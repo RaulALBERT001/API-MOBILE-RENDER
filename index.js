@@ -19,7 +19,7 @@ function generateSessions() {
   const start = new Date(Date.UTC(2025, 4, 10, 0, 0, 0));   // mês é 0-based: 4 = maio
   const end   = new Date(Date.UTC(2025, 4, 10, 23, 50, 0));
   
-  for (let d = new Date(start); d <= end; d.setMinutes(d.getMinutes() + 1)) {
+  for (let d = new Date(start); d <= end; d.setMinutes(d.getMinutes() + 5)) {
     sessions.push({
       id: String(sessionId++),
       psicologoName: 'Dra. Sofia Mendes',
